@@ -23,10 +23,14 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <div id="circle" style="background: aqua; width: 1000px;height: 1000px;">
+  <!-- <div id="circle" style="background: aqua; width: 1000px;height: 1000px;">
     <div id="circle-moss" style="background: greenyellow; width: 500px;height: 500px;border-radius: 500px;align-items: cen;"></div>
+  </div> -->
+ 
+  <div id="bottle"> 
+
   </div>
-  
+
   
 <div class="btn-group">
   <button class="js-click">Coca cola!!</button>
@@ -34,42 +38,54 @@
   <button class="js-click2">Tea</button>
   <button class="js-click3">Pepsi</button>
   <button class="js-click4">Coffee</button>
-  <button class="js-click5">Tap Water</button>
-  <button class="js-click6">Salt Water</button>
+  <button class="js-click5">Orange</button>
+  <button class="js-click6">Tomato Soup</button>
 </div>
 
 
 <script>
      $( ".js-click" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "black" )
+    //$( "#circle" ).css( "background", "black" )
+    $( "#bottle" ).append( '<div id="circle" style="background: black; width: 1000px;height: 90px;font-size:90px; color:white">10oz</div>' );
   });
-  $( ".js-click1" ).click(function() {
-    //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "blue" )
+  $( ".js-click1" ).click(function() {   
+    //$( "#circle" ).css( "background", "blue" )
+    $( "#bottle" ).append( '<div id="circle" style="background: aqua; width: 1000px;height: 90px;font-size:90px">10oz</div>' );
+
   });
   $( ".js-click2" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "brown" )
+   // $( "#circle" ).css( "background", "brown" )
+   $( "#bottle" ).append( '<div id="circle" style="background: gray; width: 1000px;height: 90px;font-size:90px">10oz</div>' );
+
   });
   $( ".js-click3" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "yellow" )
+   // $( "#circle" ).css( "background", "yellow" )
+   $( "#bottle" ).append( '<div id="circle" style="background: black; width: 1000px;height: 90px;font-size:90px;color:white">10oz</div>' );
   });
   $( ".js-click4" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "orange" )
+   // $( "#circle" ).css( "background", "orange" )
+   $( "#bottle" ).append( '<div id="circle" style="background: brown; width: 1000px;height: 90px;font-size:90px">10oz</div>' );
   });
 
   $( ".js-click5" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "purple" )
+    //$( "#circle" ).css( "background", "purple" )
+    $( "#bottle" ).append( '<div id="circle" style="background: orange; width: 1000px;height: 90px;font-size:90px">10oz</div>' );
   });
 
   $( ".js-click6" ).click(function() {
     //$( "circle" ).css('background', 'black');
-    $( "#circle" ).css( "background", "gray" )
+   // $( "#circle" ).css( "background", "gray" )
+   $( "#bottle" ).append( '<div id="circle" style="background: red; width: 1000px;height: 90px; font-size:90px">10oz</div>' );
   });
 
 
+// streaks
+// water wars
 </script>
+
+
