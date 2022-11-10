@@ -1,14 +1,40 @@
 <style>
 
   
+.btn-group button {
+  background-color: antiquewhite; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 60px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  font-size: 40px;
+}
 
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <div id="circle" style="background: greenyellow; width: 200px;height: 200px;border-radius: 200px;"></div>
+  <div id="circle" style="background: greenyellow; width: 1000px;height: 1000px;border-radius: 1000px;"></div>
+  
+  
+<div class="btn-group">
   <button class="js-click">Coca cola!!</button>
   <button class="js-click1">Water</button>
   <button class="js-click2">Tea</button>
+  <button class="js-click3">Pepsi</button>
+  <button class="js-click4">Coffee</button>
+  <button class="js-click5">Tap Water</button>
+  <button class="js-click6">Salt Water</button>
+</div>
 
 
 <script>
@@ -24,4 +50,24 @@
     //$( "circle" ).css('background', 'black');
     $( "#circle" ).css( "background", "brown" )
   });
+  $( ".js-click3" ).click(function() {
+    //$( "circle" ).css('background', 'black');
+    $( "#circle" ).css( "background", "yellow" )
+  });
+  $( ".js-click4" ).click(function() {
+    //$( "circle" ).css('background', 'black');
+    $( "#circle" ).css( "background", "orange" )
+  });
+
+  $( ".js-click5" ).click(function() {
+    //$( "circle" ).css('background', 'black');
+    $( "#circle" ).css( "background", "purple" )
+  });
+
+  $( ".js-click6" ).click(function() {
+    //$( "circle" ).css('background', 'black');
+    $( "#circle" ).css( "background", "gray" )
+  });
+
+
 </script>
